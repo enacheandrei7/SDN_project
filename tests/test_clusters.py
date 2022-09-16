@@ -14,6 +14,7 @@ class TestClustersValidation(unittest.TestCase):
         """
         with open('../response.json', 'r') as f:
             data = load(f)
+            
         self.datacenter_1 = Datacenter('Berlin', data['Berlin'])
         self.datacenter_2 = Datacenter('Paris', data['Paris'])
 
